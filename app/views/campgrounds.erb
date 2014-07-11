@@ -1,0 +1,27 @@
+<nav class="nav mobile-nav-table nav-tabs clearfix">
+    <a href="/" class="bold h3">Camper </a>
+    <% if session[:id] %>
+    <a href="/campgrounds" class="active">Search</a>
+    <a href="/users/<%=session[:id]%>/favorites">Favorites</a>
+    <a href="/logout">Log Out</a>
+    <%else%>
+    <a href="/register">Register</a>
+    <a href="/campgrounds" class="active">Search</a>
+    <a href="/login">Sign In</a>
+    <%end%>
+  </div>
+</nav>
+<div class="row">
+  <div class="mobile-col mobile-col-6 col-5">
+    <div>
+      <%= erb :search_campgrounds %>
+    </div>
+  </div>
+  <div class="mobile-col mobile-col-6 col-7">
+    <div>
+    <% if @campgrounds %>
+    <%= erb :display_campgrounds %>
+    <%end%>
+    </div>
+  </div>
+</div>
