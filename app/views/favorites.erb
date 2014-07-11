@@ -8,12 +8,11 @@
 	<img src="http://www.reserveamerica.com<%= camp.pic_url%>" class="left mr2 w280">
 	<%end%>
 	<div class="oh">
-		<h4> Name: <%= camp.name %> </h4>
-		<h4> State: <%= camp.state %> </h4>
-		<h4> Amenity: <%= camp.amenity %> </h4>
-		<h4> Site Type: <%= camp.site_type %> </h4>
-		<h4> Pets?: <%= camp.pets %> </h4>
-		<h4> Water Front: <%= camp.water_front %> </h4>
+		<div> <label class= "bold h4"> Name: </label><%= camp.name %> </div>
+		<div> <label class= "bold h4"> State:</label> <%= camp.state %> </div>
+		<div> <label class= "bold h4"> Pets?:</label> <%= camp.pets %> </div>
+		<div> <label class= "bold h4"> Type: </label><%= camp.contract_type%></div>
+		<div> <label class= "bold h4"> Water Front: </label><%= camp.water_front %> </div>
 	</div>
 	<button> <a href="/remove/<%=camp.park_num%>" class="remove">Remove</a></button>
 	<hr>

@@ -13,13 +13,13 @@
 </nav>
 <form class="form form-stacked form-light" name="create-user" action="/users" method="post">
 	<label class="m1">First Name:</label>
-	<input class="m1"type="text" name="first_name" placeholder="Ex: John"><br>
+	<input class="m1"type="text" name="first_name" placeholder="Ex: John" required><br>
 	<label class="m1">Last Name:</label>
 	<input class="m1"type="text" name="last_name" placeholder="Ex: Doe">
 	<br>
 	<label class="m1">Email    :</label>
-	<input type="email" class="m1" name="email" placeholder= "Ex: example@email.com"> <br>
+	<input type="email" class="m1" name="email" placeholder= "Ex: example@email.com" required> <br>
 	<label class="m1">Password:</label>
-	<input class="m1" type="password" name="password" placeholder="At least 8 characters"><br>
-	<input type="submit" value="Submit">
+	<input class="m1" type="password" name="password" placeholder="At least 8 characters" required><br>
+	<input class="ml1 mb1 mt2 " type="submit" value="Submit">
 </form>

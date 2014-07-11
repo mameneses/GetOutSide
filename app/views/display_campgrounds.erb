@@ -7,10 +7,11 @@
 	<img src="http://www.reserveamerica.com<%= camp.first.pic_url%>" class="left mr2 w280">
 	<%end%>
 	<div class="oh">
-		<div> Name: <%= camp.first.name %> </div>
-		<div> State: <%= camp.first.state %> </div>
-		<div> Pets?: <%= camp.first.pets %> </div>
-		<div> Water Front: <%= camp.first.water_front %> </div>
+		<div> <label class= "bold h4"> Name: </label><%= camp.first.name %> </div>
+		<div> <label class= "bold h4"> State:</label> <%= camp.first.state %> </div>
+		<div> <label class= "bold h4"> Pets?:</label> <%= camp.first.pets %> </div>
+		<div> <label class= "bold h4"> Type: </label><%= camp.first.contract_type%></div>
+		<div> <label class= "bold h4"> Water Front: </label><%= camp.first.water_front %> </div>
 		<%if session[:id]%>
 		<form action="/add_fav" method="post" class="add_fav">
 			<input type="hidden" name="park_num" value="<%=camp.first.park_num%>">

@@ -15,7 +15,8 @@ helpers do
           water_front: camp["sitesWithWaterfront"],
           contract_code: camp["contractID"],
           park_num: camp["facilityID"],
-          pic_url: camp["faciltyPhoto"]
+          pic_url: camp["faciltyPhoto"],
+          contract_type: camp['contractType']
           )
         if camp["sitesWithPetsAllowed"] == "Y"
           camps.update_attributes(pets: true)

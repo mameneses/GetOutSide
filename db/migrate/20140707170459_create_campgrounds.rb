@@ -10,6 +10,7 @@ class CreateCampgrounds < ActiveRecord::Migration
       t.string :contract_code
       t.string :park_num
       t.string :pic_url
+      t.string :contract_type
   	end
   end
 end
