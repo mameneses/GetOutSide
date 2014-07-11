@@ -31,10 +31,10 @@ helpers do
         session[:id] = User.find_by_email(params[:email]).id
         redirect"/users/#{session[:id]}/favorites"
       else
-        redirect '/'
+        erb :login_errors
       end
     else
-      redirect'/'
+      erb :login_errors
     end
   end
 end
